@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5) · 55 Trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PS5: checklist, roadmap to the platinum, missable flags, and a cited guide for every trophy.">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/views.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true">VI</div>
+    <div>
+      <h1>Leonida Trophy Guide</h1>
+      <p class="subtitle">Grand Theft Auto VI · PlayStation 5 · 55 trophies · 1 platinum, 2 gold, 6 silver, 46 bronze</p>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <button type="button" data-view="tracker" class="tab active" id="tab-tracker">Tracker</button>
+    <button type="button" data-view="roadmap" class="tab" id="tab-roadmap">Roadmap</button>
+    <button type="button" data-view="missables" class="tab" id="tab-missables">Missables</button>
+    <button type="button" data-view="sources" class="tab" id="tab-sources">Sources</button>
+  </nav>
+</header>
+
+<main>
+  <section id="view-tracker" class="view active" aria-label="Trophy tracker">
+    <div class="progress-card" id="progressCard">
+      <div class="progress-head">
+        <strong id="progressText">0 of 55 earned</strong>
+        <span id="progressPct">0%</span>
+      </div>
+      <div class="progress-bar" role="progressbar" aria-label="Trophies earned" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBarWrap"><div class="progress-fill" id="progressFill"></div></div>
+      <p class="grade-counts" id="gradeCounts"></p>
+    </div>
+
+    <div class="controls" id="controls">
+      <label class="control">Search
+        <input id="search" type="search" placeholder="Name, description or guide…" autocomplete="off">
+      </label>
+      <label class="control">Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="side">Side stories</option>
+          <option value="collectibles">Collectibles</option>
+          <option value="activities">Activities</option>
+          <option value="crime">Crime &amp; robberies</option>
+          <option value="exploration">Exploration</option>
+          <option value="misc">Odd jobs</option>
+          <option value="completion">Completion</option>
+        </select>
+      </label>
+      <label class="control">Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="check"><input id="missableOnly" type="checkbox"> Missable only</label>
+      <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+      <label class="check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+      <label class="check spoiler"><input id="spoiler" type="checkbox" checked> Hide story spoilers</label>
+      <span class="spacer"></span>
+      <button id="exportBtn" type="button">Export progress</button>
+      <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    </div>
+    <p class="hint" id="listHint"></p>
+
+    <div class="tracker-layout">
+      <ul class="trophy-list" id="trophyList"></ul>
+      <aside class="detail" id="detail" aria-live="polite">
+        <p class="detail-empty">Select a trophy to read its guide, steps and sources.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="view-roadmap" class="view" aria-label="Roadmap to the platinum">
+    <div id="roadmapBody"></div>
+  </section>
+
+  <section id="view-missables" class="view" aria-label="Missable trophies">
+    <div id="missablesBody"></div>
+  </section>
+
+  <section id="view-sources" class="view" aria-label="Sources and notes">
+    <div id="sourcesBody"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan guide. Grand Theft Auto is a trademark of Take-Two Interactive; this guide uses no Rockstar logo, artwork or game screenshots. Trophy names, descriptions and grades are the official PlayStation list. Works fully offline — it loads nothing from the network.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
